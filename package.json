@@ -1,0 +1,14 @@
+{
+  "name": "parodify",
+  "version": "1.0.0",
+  "description": "Projeto de testes de aceitação site parodify",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Paulo Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
+}
