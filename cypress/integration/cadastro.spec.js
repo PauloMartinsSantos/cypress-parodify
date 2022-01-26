@@ -32,13 +32,13 @@ describe('Login', () => {
                 login.go()
 
                 login.fieldEmailShoudBeVisible()
-                login.fillForm('wrong@email.com','xxxxx')
-                login.submit()  
+                login.fillForm('wrong@email.com', 'xxxxx')
+                login.submit()
 
                 login.alert().should('contain', 'Oops! Email e/ou senha incorretos.')
             })
 
         })
-
+        
     })
 })
