@@ -17,8 +17,5 @@ describe('Reproduzir parodia',()=>{
         //Check Point
         cy.get('h2[class*="is-size-3 has-text-weight-bold"]').should('have.text','Rock')
 
-        
-
-
     })
 })

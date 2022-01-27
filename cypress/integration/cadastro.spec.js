@@ -1,12 +1,30 @@
 ///<reference types="cypress"/>
 import login from '../support/pages/LoginPage'
 import header from '../support/pages/components/Header'
+import { internet } from 'faker'
+
+var faker = require('faker')
+
+var email = internet.exampleEmail()
+var senha = internet.password()
+
+describe('Cadastro', () => {
+    it('usuario deve se cadastrar corretamente', () => {
+
+        login.go()     
+        login.cadastro(email, senha)
+    })
+
+
+})
 
 describe('Login', () => {
     it('usuario deve se logar corretamente', () => {
 
+        senha
+
         login.go()
-        login.fillForm('paulosantos@parodify.com', 'senha123')
+        login.fillForm(email,senha)
         login.submit()
         header.userSholdLoggedIn()
 
@@ -39,6 +57,6 @@ describe('Login', () => {
             })
 
         })
-        
+
     })
 })

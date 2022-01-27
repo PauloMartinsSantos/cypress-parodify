@@ -9,6 +9,7 @@
   "author": "Paulo Santos",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.3.1"
+    "cypress": "^9.3.1",
+    "faker": "^5.5.3"
   }
 }
