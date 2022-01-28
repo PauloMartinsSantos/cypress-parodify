@@ -1,3 +1,5 @@
+/// <reference types="cypress-xpath" />
+
 //Testando o player de parodia
 
 // aqui no player page colocar as açoes que vao ser invocadas pelo player.spec
@@ -9,7 +11,8 @@ class PlayerPage {
     }
 
     rock(){
-        cy.get('a[href*="categories/1" ] img[src$="rock.png"]').click()
+        //cy.get('a[href*="categories/1" ] img[src$="rock.png"]').click()  //Css Selector
+        cy.xpath('//img[contains(@src,"rock.png")]').click()
     }
 
     funk(){

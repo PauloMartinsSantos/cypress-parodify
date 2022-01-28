@@ -11,6 +11,8 @@ var senha = internet.password()
 describe('Cadastro', () => {
     it('usuario deve se cadastrar corretamente', () => {
 
+        
+
         login.go()     
         login.cadastro(email, senha)
     })
@@ -36,7 +38,7 @@ describe('Login', () => {
 
             login.go()
             login.fieldEmailShoudBeVisible()
-            login.fillForm('paulosantos@parodify.com', 'wrongPwd') //preenchimento manual da massa de dados
+            login.fillForm(email, 'wrongPwd') //preenchimento manual da massa de dados
             login.submit()
 
 
